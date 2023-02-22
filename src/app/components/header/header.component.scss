@@ -1,3 +1,25 @@
 .example-spacer {
     flex: 1 1 auto;
 }
+
+header { background: rgb(2, 2, 6); }
+
+header::before {
+ content: '';
+ position: fixed;
+ height: 200px;
+ width: 200px;
+ background: rgb(0, 255, 255);
+ filter: blur(140px);
+}
+
+header::after {
+ content: '';
+ position: fixed;
+ top: 200px;
+ left: 250px;
+ height: 200px;
+ width: 200px;
+ background: rgb(183, 0, 255);
+ filter: blur(140px);
+}
