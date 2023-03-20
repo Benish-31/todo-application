@@ -30,7 +30,7 @@ export class LoginComponent implements OnInit {
       sessionStorage.setItem("token", data.token);
       sessionStorage.setItem("userId", data.user._id);
       sessionStorage.setItem("username", data.user.username);
-      this.snackbar.open("Login successfull. Welcome to Todo App.", "close", {
+      this.snackbar.open("Login successful. Welcome to Todo App.", "close", {
         verticalPosition: "top"
       });
       this._router.navigate(['/home']);
